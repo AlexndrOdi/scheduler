@@ -15,6 +15,9 @@
 		3699B823260D381E00CD8E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3699B821260D381E00CD8E38 /* LaunchScreen.storyboard */; };
 		3699B82E260D381F00CD8E38 /* SchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B82D260D381F00CD8E38 /* SchedulerTests.swift */; };
 		3699B839260D381F00CD8E38 /* SchedulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B838260D381F00CD8E38 /* SchedulerUITests.swift */; };
+		3699B883260E76C600CD8E38 /* ProgressNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B882260E76C600CD8E38 /* ProgressNode.swift */; };
+		3699B888260E789700CD8E38 /* ProgressLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B887260E789700CD8E38 /* ProgressLine.swift */; };
+		3699B88D260E7AEE00CD8E38 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B88C260E7AEE00CD8E38 /* ProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		3699B834260D381F00CD8E38 /* SchedulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchedulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3699B838260D381F00CD8E38 /* SchedulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerUITests.swift; sourceTree = "<group>"; };
 		3699B83A260D381F00CD8E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3699B882260E76C600CD8E38 /* ProgressNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressNode.swift; sourceTree = "<group>"; };
+		3699B887260E789700CD8E38 /* ProgressLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLine.swift; sourceTree = "<group>"; };
+		3699B88C260E7AEE00CD8E38 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				3699B81F260D381E00CD8E38 /* Assets.xcassets */,
 				3699B821260D381E00CD8E38 /* LaunchScreen.storyboard */,
 				3699B824260D381E00CD8E38 /* Info.plist */,
+				3699B882260E76C600CD8E38 /* ProgressNode.swift */,
+				3699B887260E789700CD8E38 /* ProgressLine.swift */,
+				3699B88C260E7AEE00CD8E38 /* ProgressView.swift */,
 			);
 			path = Scheduler;
 			sourceTree = "<group>";
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3699B883260E76C600CD8E38 /* ProgressNode.swift in Sources */,
 				3699B81B260D381D00CD8E38 /* ViewController.swift in Sources */,
+				3699B888260E789700CD8E38 /* ProgressLine.swift in Sources */,
 				3699B817260D381D00CD8E38 /* AppDelegate.swift in Sources */,
 				3699B819260D381D00CD8E38 /* SceneDelegate.swift in Sources */,
+				3699B88D260E7AEE00CD8E38 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
