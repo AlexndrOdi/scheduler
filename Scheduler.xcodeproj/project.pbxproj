@@ -18,6 +18,26 @@
 		3699B883260E76C600CD8E38 /* ProgressNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B882260E76C600CD8E38 /* ProgressNode.swift */; };
 		3699B888260E789700CD8E38 /* ProgressLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B887260E789700CD8E38 /* ProgressLine.swift */; };
 		3699B88D260E7AEE00CD8E38 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B88C260E7AEE00CD8E38 /* ProgressView.swift */; };
+		3699B892260E860900CD8E38 /* TaskWidgetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B891260E860900CD8E38 /* TaskWidgetList.swift */; };
+		3699B89A260E8DBC00CD8E38 /* TaskWidgetLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B899260E8DBC00CD8E38 /* TaskWidgetLayoutAttributes.swift */; };
+		3699B89F260E8E0400CD8E38 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B89E260E8E0400CD8E38 /* UIEdgeInsets+Extensions.swift */; };
+		3699B8A4260E8E9300CD8E38 /* TaskWidgetListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B8A3260E8E9300CD8E38 /* TaskWidgetListFlowLayout.swift */; };
+		3699B8A9260E9FC700CD8E38 /* TaskWidgetListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B8A8260E9FC700CD8E38 /* TaskWidgetListAdapter.swift */; };
+		3699B8C2260EA23C00CD8E38 /* TaskWidgetSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B8C1260EA23C00CD8E38 /* TaskWidgetSizeCalculator.swift */; };
+		3699B8CB260F2DA200CD8E38 /* RandomAccessCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B8CA260F2DA200CD8E38 /* RandomAccessCollection+Extensions.swift */; };
+		3699B8D4260F2E1F00CD8E38 /* TaskWidgetCurrentTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B8D3260F2E1F00CD8E38 /* TaskWidgetCurrentTimeView.swift */; };
+		3699B8D9260F2E5200CD8E38 /* TaskWidgetCurrentTimeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B8D8260F2E5200CD8E38 /* TaskWidgetCurrentTimeIndicator.swift */; };
+		3699B8DE260F2E7F00CD8E38 /* TaskWidgetTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B8DD260F2E7F00CD8E38 /* TaskWidgetTimeView.swift */; };
+		3699B8EF260F479000CD8E38 /* WidgetTextInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B8EE260F479000CD8E38 /* WidgetTextInsets.swift */; };
+		3699B8F4261090F300CD8E38 /* TaskWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B8F3261090F300CD8E38 /* TaskWidget.swift */; };
+		3699B8F92610928300CD8E38 /* TaskWidgetListFlowLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B8F82610928300CD8E38 /* TaskWidgetListFlowLayoutDelegate.swift */; };
+		3699B90D26109E9C00CD8E38 /* ITask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B90C26109E9C00CD8E38 /* ITask.swift */; };
+		3699B91226109EAE00CD8E38 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B91126109EAE00CD8E38 /* Task.swift */; };
+		3699B91726109F2000CD8E38 /* ITaskWidgetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B91626109F2000CD8E38 /* ITaskWidgetListViewModel.swift */; };
+		3699B91C26109FEB00CD8E38 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B91B26109FEB00CD8E38 /* DashboardViewController.swift */; };
+		3699B9212610A4F200CD8E38 /* ITaskWidgetSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B9202610A4F200CD8E38 /* ITaskWidgetSizeCalculator.swift */; };
+		3699B92D2610B72D00CD8E38 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B92C2610B72D00CD8E38 /* UIButton+Extensions.swift */; };
+		3699B9322610B74C00CD8E38 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B9312610B74C00CD8E38 /* ActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +75,26 @@
 		3699B882260E76C600CD8E38 /* ProgressNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressNode.swift; sourceTree = "<group>"; };
 		3699B887260E789700CD8E38 /* ProgressLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLine.swift; sourceTree = "<group>"; };
 		3699B88C260E7AEE00CD8E38 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		3699B891260E860900CD8E38 /* TaskWidgetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetList.swift; sourceTree = "<group>"; };
+		3699B899260E8DBC00CD8E38 /* TaskWidgetLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetLayoutAttributes.swift; sourceTree = "<group>"; };
+		3699B89E260E8E0400CD8E38 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		3699B8A3260E8E9300CD8E38 /* TaskWidgetListFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetListFlowLayout.swift; sourceTree = "<group>"; };
+		3699B8A8260E9FC700CD8E38 /* TaskWidgetListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetListAdapter.swift; sourceTree = "<group>"; };
+		3699B8C1260EA23C00CD8E38 /* TaskWidgetSizeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetSizeCalculator.swift; sourceTree = "<group>"; };
+		3699B8CA260F2DA200CD8E38 /* RandomAccessCollection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+Extensions.swift"; sourceTree = "<group>"; };
+		3699B8D3260F2E1F00CD8E38 /* TaskWidgetCurrentTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetCurrentTimeView.swift; sourceTree = "<group>"; };
+		3699B8D8260F2E5200CD8E38 /* TaskWidgetCurrentTimeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetCurrentTimeIndicator.swift; sourceTree = "<group>"; };
+		3699B8DD260F2E7F00CD8E38 /* TaskWidgetTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetTimeView.swift; sourceTree = "<group>"; };
+		3699B8EE260F479000CD8E38 /* WidgetTextInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTextInsets.swift; sourceTree = "<group>"; };
+		3699B8F3261090F300CD8E38 /* TaskWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidget.swift; sourceTree = "<group>"; };
+		3699B8F82610928300CD8E38 /* TaskWidgetListFlowLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetListFlowLayoutDelegate.swift; sourceTree = "<group>"; };
+		3699B90C26109E9C00CD8E38 /* ITask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITask.swift; sourceTree = "<group>"; };
+		3699B91126109EAE00CD8E38 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3699B91626109F2000CD8E38 /* ITaskWidgetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITaskWidgetListViewModel.swift; sourceTree = "<group>"; };
+		3699B91B26109FEB00CD8E38 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		3699B9202610A4F200CD8E38 /* ITaskWidgetSizeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITaskWidgetSizeCalculator.swift; sourceTree = "<group>"; };
+		3699B92C2610B72D00CD8E38 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		3699B9312610B74C00CD8E38 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +152,11 @@
 				3699B81F260D381E00CD8E38 /* Assets.xcassets */,
 				3699B821260D381E00CD8E38 /* LaunchScreen.storyboard */,
 				3699B824260D381E00CD8E38 /* Info.plist */,
-				3699B882260E76C600CD8E38 /* ProgressNode.swift */,
-				3699B887260E789700CD8E38 /* ProgressLine.swift */,
-				3699B88C260E7AEE00CD8E38 /* ProgressView.swift */,
+				3699B8C6260EA2CC00CD8E38 /* ProgressView */,
+				3699B905261092BB00CD8E38 /* TaskList */,
+				3699B8CF260F2DD300CD8E38 /* Extensions */,
+				3699B91B26109FEB00CD8E38 /* DashboardViewController.swift */,
+				3699B9312610B74C00CD8E38 /* ActionButton.swift */,
 			);
 			path = Scheduler;
 			sourceTree = "<group>";
@@ -135,6 +177,72 @@
 				3699B83A260D381F00CD8E38 /* Info.plist */,
 			);
 			path = SchedulerUITests;
+			sourceTree = "<group>";
+		};
+		3699B8C6260EA2CC00CD8E38 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				3699B882260E76C600CD8E38 /* ProgressNode.swift */,
+				3699B887260E789700CD8E38 /* ProgressLine.swift */,
+				3699B88C260E7AEE00CD8E38 /* ProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		3699B8CF260F2DD300CD8E38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3699B89E260E8E0400CD8E38 /* UIEdgeInsets+Extensions.swift */,
+				3699B8CA260F2DA200CD8E38 /* RandomAccessCollection+Extensions.swift */,
+				3699B92C2610B72D00CD8E38 /* UIButton+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3699B8FD2610929B00CD8E38 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				3699B899260E8DBC00CD8E38 /* TaskWidgetLayoutAttributes.swift */,
+				3699B8F82610928300CD8E38 /* TaskWidgetListFlowLayoutDelegate.swift */,
+				3699B8A3260E8E9300CD8E38 /* TaskWidgetListFlowLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		3699B901261092B300CD8E38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3699B8D3260F2E1F00CD8E38 /* TaskWidgetCurrentTimeView.swift */,
+				3699B8D8260F2E5200CD8E38 /* TaskWidgetCurrentTimeIndicator.swift */,
+				3699B8DD260F2E7F00CD8E38 /* TaskWidgetTimeView.swift */,
+				3699B8EE260F479000CD8E38 /* WidgetTextInsets.swift */,
+				3699B8F3261090F300CD8E38 /* TaskWidget.swift */,
+				3699B891260E860900CD8E38 /* TaskWidgetList.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3699B905261092BB00CD8E38 /* TaskList */ = {
+			isa = PBXGroup;
+			children = (
+				3699B8A8260E9FC700CD8E38 /* TaskWidgetListAdapter.swift */,
+				3699B9252610A4FF00CD8E38 /* Calculator */,
+				3699B901261092B300CD8E38 /* View */,
+				3699B8FD2610929B00CD8E38 /* Layout */,
+				3699B90C26109E9C00CD8E38 /* ITask.swift */,
+				3699B91126109EAE00CD8E38 /* Task.swift */,
+				3699B91626109F2000CD8E38 /* ITaskWidgetListViewModel.swift */,
+			);
+			path = TaskList;
+			sourceTree = "<group>";
+		};
+		3699B9252610A4FF00CD8E38 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				3699B8C1260EA23C00CD8E38 /* TaskWidgetSizeCalculator.swift */,
+				3699B9202610A4F200CD8E38 /* ITaskWidgetSizeCalculator.swift */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,11 +375,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3699B8A4260E8E9300CD8E38 /* TaskWidgetListFlowLayout.swift in Sources */,
+				3699B91C26109FEB00CD8E38 /* DashboardViewController.swift in Sources */,
+				3699B89F260E8E0400CD8E38 /* UIEdgeInsets+Extensions.swift in Sources */,
 				3699B883260E76C600CD8E38 /* ProgressNode.swift in Sources */,
 				3699B81B260D381D00CD8E38 /* ViewController.swift in Sources */,
+				3699B8CB260F2DA200CD8E38 /* RandomAccessCollection+Extensions.swift in Sources */,
+				3699B8C2260EA23C00CD8E38 /* TaskWidgetSizeCalculator.swift in Sources */,
+				3699B9212610A4F200CD8E38 /* ITaskWidgetSizeCalculator.swift in Sources */,
+				3699B8D9260F2E5200CD8E38 /* TaskWidgetCurrentTimeIndicator.swift in Sources */,
+				3699B91726109F2000CD8E38 /* ITaskWidgetListViewModel.swift in Sources */,
 				3699B888260E789700CD8E38 /* ProgressLine.swift in Sources */,
+				3699B8F92610928300CD8E38 /* TaskWidgetListFlowLayoutDelegate.swift in Sources */,
+				3699B8F4261090F300CD8E38 /* TaskWidget.swift in Sources */,
+				3699B92D2610B72D00CD8E38 /* UIButton+Extensions.swift in Sources */,
+				3699B8A9260E9FC700CD8E38 /* TaskWidgetListAdapter.swift in Sources */,
+				3699B9322610B74C00CD8E38 /* ActionButton.swift in Sources */,
+				3699B892260E860900CD8E38 /* TaskWidgetList.swift in Sources */,
+				3699B8DE260F2E7F00CD8E38 /* TaskWidgetTimeView.swift in Sources */,
+				3699B8EF260F479000CD8E38 /* WidgetTextInsets.swift in Sources */,
+				3699B90D26109E9C00CD8E38 /* ITask.swift in Sources */,
 				3699B817260D381D00CD8E38 /* AppDelegate.swift in Sources */,
 				3699B819260D381D00CD8E38 /* SceneDelegate.swift in Sources */,
+				3699B8D4260F2E1F00CD8E38 /* TaskWidgetCurrentTimeView.swift in Sources */,
+				3699B89A260E8DBC00CD8E38 /* TaskWidgetLayoutAttributes.swift in Sources */,
+				3699B91226109EAE00CD8E38 /* Task.swift in Sources */,
 				3699B88D260E7AEE00CD8E38 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +576,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Scheduler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +585,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ru.pets-project.Scheduler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,7 +596,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Scheduler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,6 +605,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ru.pets-project.Scheduler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
