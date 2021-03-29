@@ -31,13 +31,19 @@ final class ActionButton: UIButton {
         static let prefferedSize = CGSize(width: 56.0, height: 56.0)
     }
 
-    // MARK: - Enums
+    // MARK: - Nested Types
 
     enum Kind {
         case add, done
     }
 
+    // MARK: - Properties
+
     let kind: Kind
+
+    // MARK: - Private properties
+
+    private let markLayer = CAShapeLayer()
 
     // MARK: - Initialization
 
@@ -59,30 +65,17 @@ final class ActionButton: UIButton {
     // MARK: - Lifecycle
 
     override func sizeThatFits(_ size: CGSize) -> CGSize {
-        switch kind {
-        case .add:
-            let transaform = CGAffineTransform(
-                scaleX: 1 + titleEdgeInsets.horizontal / Constants.prefferedSize.width,
-                y: 1 + titleEdgeInsets.vertical / Constants.prefferedSize.height
-            )
-            return Constants.prefferedSize.applying(transaform)
-        case .done:
-            let size = attributedTitle(for: .normal)?.boundingRect(
-                with: size,
-                options: [.usesLineFragmentOrigin, .usesFontLeading],
-                context: nil
-            ).integral.size  ?? Constants.prefferedSize
-            let transaform = CGAffineTransform(
-                scaleX: 1 + titleEdgeInsets.horizontal / size.width,
-                y: 1 + titleEdgeInsets.vertical / size.height
-            )
-            return size.applying(transaform)
-        }
+        let transaform = CGAffineTransform(
+            scaleX: 1 + titleEdgeInsets.horizontal / Constants.prefferedSize.width,
+            y: 1 + titleEdgeInsets.vertical / Constants.prefferedSize.height
+        )
+        return Constants.prefferedSize.applying(transaform)
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = Constants.cornerRadius
+        markLayer.path = markLayerPath()
     }
 
     // MARK: - Private functions
@@ -90,6 +83,65 @@ final class ActionButton: UIButton {
     private func setupAppearance() {
         layer.masksToBounds = true
         setBackgroundColor(#colorLiteral(red: 0, green: 0.1040571257, blue: 0.1882568598, alpha: 1), for: .normal)
+        setupMarkLayer()
+    }
+
+    private func setupMarkLayer() {
+        markLayer.strokeColor = UIColor.white.cgColor
+        markLayer.lineWidth = 2.5
+        markLayer.fillColor = UIColor.clear.cgColor
+        layer.addSublayer(markLayer)
+    }
+
+    private func markLayerPath() -> CGPath {
+        let path = UIBezierPath()
+        switch kind {
+        case .add:
+            path.move(
+                to: CGPoint(
+                    x: bounds.midX - 9,
+                    y: bounds.midY
+                )
+            )
+            path.addLine(
+                to: CGPoint(
+                    x: bounds.midX + 9,
+                    y: bounds.midY
+                )
+            )
+            path.move(
+                to: CGPoint(
+                    x: bounds.midX,
+                    y: bounds.midY - 9
+                )
+            )
+            path.addLine(
+                to: CGPoint(
+                    x: bounds.midX,
+                    y: bounds.midY + 9
+                )
+            )
+        case .done:
+            path.move(
+                to: CGPoint(
+                    x: bounds.midX - 7,
+                    y: bounds.midY - 1
+                )
+            )
+            path.addLine(
+                to: CGPoint(
+                    x: bounds.midX - 2,
+                    y: bounds.midY + 5
+                )
+            )
+            path.addLine(
+                to: CGPoint(
+                    x: bounds.midX + 10,
+                    y: bounds.midY - 8
+                )
+            )
+        }
+        return path.cgPath
     }
 
     private func setupInteractions() {
@@ -131,16 +183,5 @@ final class ActionButton: UIButton {
         animation.isRemovedOnCompletion = false
         animation.fillMode = .forwards
         return animation
-    }
-}
-
-extension ActionButton.Kind {
-    var attributedText: NSAttributedString {
-        switch self {
-        case .add:
-            return NSAttributedString(string: "add")
-        case .done:
-            return NSAttributedString(string: "done")
-        }
     }
 }

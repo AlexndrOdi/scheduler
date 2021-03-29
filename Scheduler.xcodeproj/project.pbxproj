@@ -160,6 +160,7 @@
 				3699B81F260D381E00CD8E38 /* Assets.xcassets */,
 				3699B821260D381E00CD8E38 /* LaunchScreen.storyboard */,
 				3699B824260D381E00CD8E38 /* Info.plist */,
+				36A43AB92612706400B677A0 /* DI */,
 				3699B8C6260EA2CC00CD8E38 /* ProgressView */,
 				3699B905261092BB00CD8E38 /* TaskList */,
 				3699B8CF260F2DD300CD8E38 /* Extensions */,
@@ -271,6 +272,13 @@
 				3699B91126109EAE00CD8E38 /* Task.swift */,
 			);
 			path = Task;
+			sourceTree = "<group>";
+		};
+		36A43AB92612706400B677A0 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
