@@ -12,6 +12,7 @@ final class TaskWidgetLayoutAttributes: UICollectionViewLayoutAttributes {
     // MARK: - Properties
 
     var textInsets: WidgetTextInsets = .zero
+    var progressViewInsets: UIEdgeInsets = .zero
     var roundedCorners: UIRectCorner = .allCorners
     var cornerRadius: CGFloat = .zero
 
@@ -37,6 +38,7 @@ final class TaskWidgetLayoutAttributes: UICollectionViewLayoutAttributes {
         attr.roundedCorners = self.roundedCorners
         attr.textInsets = self.textInsets
         attr.cornerRadius = self.cornerRadius
+        attr.progressViewInsets = self.progressViewInsets
         return attr
     }
 
@@ -48,6 +50,7 @@ final class TaskWidgetLayoutAttributes: UICollectionViewLayoutAttributes {
         return attr.cornerRadius == self.cornerRadius
             && attr.roundedCorners == self.roundedCorners
             && attr.textInsets == self.textInsets
+            && attr.progressViewInsets == self.progressViewInsets
             && super.isEqual(object)
     }
 }

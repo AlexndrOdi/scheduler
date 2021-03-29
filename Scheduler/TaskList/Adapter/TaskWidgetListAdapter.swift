@@ -7,31 +7,6 @@
 
 import UIKit
 
-protocol ITaskWidgetListAdapter: AnyObject {
-
-    // MARK: - Functions
-
-    func task(for indexPath: IndexPath) -> ITask?
-    func update(tasks: [ITask])
-}
-
-protocol TaskWidgetListAdapterDelegate: AnyObject {
-
-    // MARK: - Functions
-
-    func adapter(
-        _ adapter: ITaskWidgetListAdapter,
-        didComplete task: ITask,
-        at indexPath: IndexPath
-    )
-
-    func adapter(
-        _ adapter: ITaskWidgetListAdapter,
-        didSelect task: ITask,
-        at indexPath: IndexPath
-    )
-}
-
 final class TaskWidgetListAdapter: NSObject, ITaskWidgetListAdapter {
 
     var reuse = "Widget"
@@ -51,7 +26,7 @@ final class TaskWidgetListAdapter: NSObject, ITaskWidgetListAdapter {
         self.collectionView = collectionView
         super.init()
         self.collectionView.register(
-            TaskWidget.self,
+            TaskWidgetViewCell.self,
             forCellWithReuseIdentifier: reuse
         )
         self.collectionView.dataSource = self
@@ -90,7 +65,7 @@ extension TaskWidgetListAdapter: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: reuse,
             for: indexPath
-        ) as! TaskWidget
+        ) as! TaskWidgetViewCell
         cell.configure(task: task)
         cell.delegate = self
         return cell
@@ -118,14 +93,16 @@ extension TaskWidgetListAdapter: UICollectionViewDelegate {
     }
 }
 
-// MARK: - TaskWidgetDelegate
+// MARK: - TaskWidgetViewCellDelegate
 
-extension TaskWidgetListAdapter: TaskWidgetDelegate {
-    func taskWidgetDidTapDoneButton(_ widget: TaskWidget) {
+extension TaskWidgetListAdapter: TaskWidgetViewCellDelegate {
+    func widgetCellDidTapDoneButton(_ cell: TaskWidgetViewCell) {
         guard
-            let indexPath = collectionView.indexPath(for: widget),
+            let indexPath = collectionView.indexPath(for: cell),
             let task = tasks[at: indexPath.item]
         else { return }
+        task.isCompleted.toggle()
+        collectionView.reloadItems(at: [indexPath])
         delegate?.adapter(self, didComplete: task, at: indexPath)
     }
 }

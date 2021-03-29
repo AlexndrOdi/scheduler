@@ -183,12 +183,19 @@ final class TaskWidgetListFlowLayout:  UICollectionViewFlowLayout {
             timeIntervalInsets: .init(top: 16, left: 12, bottom: .zero, right: 16),
             doneButtonInsets: .init(top: 16, left: 12, bottom: 16, right: 16)
         )
+        layoutAttributes.progressViewInsets = UIEdgeInsets(
+            top: 8.0,
+            left: 24.0,
+            bottom: .zero,
+            right: 12.0
+        )
         layoutAttributes.cornerRadius = 12
         layoutAttributes.roundedCorners = .allCorners
         layoutAttributes.frame.size = delegate?.flowLayout(
             self,
             sizeForWidgetAt: layoutAttributes.indexPath,
-            with: layoutAttributes.textInsets
+            with: layoutAttributes.textInsets,
+            prefferedWidth: contentWidth - layoutAttributes.progressViewInsets.horizontal - 15.0
         ) ?? .zero
     }
 }

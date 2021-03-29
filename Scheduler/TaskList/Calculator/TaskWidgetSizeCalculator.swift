@@ -33,7 +33,7 @@ final class TaskWidgetSizeCalculator: ITaskWidgetSizeCalculator {
         let timeIntervalHeight = textInsets.timeIntervalInsets.vertical + timeIntervalSize.height
         let descriptionHeight = descriptionSize.height + textInsets.descriptionInsets.vertical
         let height = max(titleHeight, timeIntervalHeight) + descriptionHeight
-        let selectedHeight = height + textInsets.doneButtonInsets.vertical + 44
+        let selectedHeight = height + textInsets.doneButtonInsets.vertical + 56
 
         return CGSize(
             width: prefferedWidth,

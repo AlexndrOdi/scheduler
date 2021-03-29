@@ -60,7 +60,7 @@ final class TaskWidgetList: UIView {
     // MARK: - Private functions
 
     private func setup() {
-        collectionView.backgroundColor = #colorLiteral(red: 0.09646814317, green: 0.09590236098, blue: 0.09690798074, alpha: 1)
+        collectionView.backgroundColor = .white
         addSubview(collectionView)
     }
 }
@@ -71,14 +71,15 @@ extension TaskWidgetList: TaskWidgetListFlowLayoutDelegate {
     func flowLayout(
         _ flowLayout: TaskWidgetListFlowLayout,
         sizeForWidgetAt indexPath: IndexPath,
-        with textInsets: WidgetTextInsets
+        with textInsets: WidgetTextInsets,
+        prefferedWidth: CGFloat
     ) -> CGSize {
         guard let task = adapter.task(for: indexPath) else {
             return .zero
         }
         return widgetCalculator.size(
             for: task,
-            with: flowLayout.contentWidth,
+            with: prefferedWidth,
             textInsets: textInsets
         )
     }

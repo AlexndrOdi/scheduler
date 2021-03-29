@@ -38,6 +38,10 @@
 		3699B9212610A4F200CD8E38 /* ITaskWidgetSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B9202610A4F200CD8E38 /* ITaskWidgetSizeCalculator.swift */; };
 		3699B92D2610B72D00CD8E38 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B92C2610B72D00CD8E38 /* UIButton+Extensions.swift */; };
 		3699B9322610B74C00CD8E38 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699B9312610B74C00CD8E38 /* ActionButton.swift */; };
+		36A43A98261261EE00B677A0 /* ITaskWidgetListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A43A97261261EE00B677A0 /* ITaskWidgetListAdapter.swift */; };
+		36A43A9D2612620100B677A0 /* TaskWidgetListAdapterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A43A9C2612620100B677A0 /* TaskWidgetListAdapterDelegate.swift */; };
+		36A43AB0261269A200B677A0 /* TaskWidgetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A43AAF261269A200B677A0 /* TaskWidgetViewCell.swift */; };
+		36A43AB5261269BE00B677A0 /* TaskWidgetViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A43AB4261269BE00B677A0 /* TaskWidgetViewCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,10 @@
 		3699B9202610A4F200CD8E38 /* ITaskWidgetSizeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITaskWidgetSizeCalculator.swift; sourceTree = "<group>"; };
 		3699B92C2610B72D00CD8E38 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		3699B9312610B74C00CD8E38 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		36A43A97261261EE00B677A0 /* ITaskWidgetListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITaskWidgetListAdapter.swift; sourceTree = "<group>"; };
+		36A43A9C2612620100B677A0 /* TaskWidgetListAdapterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetListAdapterDelegate.swift; sourceTree = "<group>"; };
+		36A43AAF261269A200B677A0 /* TaskWidgetViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetViewCell.swift; sourceTree = "<group>"; };
+		36A43AB4261269BE00B677A0 /* TaskWidgetViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetViewCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +226,8 @@
 				3699B8EE260F479000CD8E38 /* WidgetTextInsets.swift */,
 				3699B8F3261090F300CD8E38 /* TaskWidget.swift */,
 				3699B891260E860900CD8E38 /* TaskWidgetList.swift */,
+				36A43AAF261269A200B677A0 /* TaskWidgetViewCell.swift */,
+				36A43AB4261269BE00B677A0 /* TaskWidgetViewCellDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,12 +235,11 @@
 		3699B905261092BB00CD8E38 /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
-				3699B8A8260E9FC700CD8E38 /* TaskWidgetListAdapter.swift */,
+				36A43AA42612621100B677A0 /* Adapter */,
 				3699B9252610A4FF00CD8E38 /* Calculator */,
 				3699B901261092B300CD8E38 /* View */,
 				3699B8FD2610929B00CD8E38 /* Layout */,
-				3699B90C26109E9C00CD8E38 /* ITask.swift */,
-				3699B91126109EAE00CD8E38 /* Task.swift */,
+				36A43AAB2612621F00B677A0 /* Task */,
 				3699B91626109F2000CD8E38 /* ITaskWidgetListViewModel.swift */,
 			);
 			path = TaskList;
@@ -243,6 +252,25 @@
 				3699B9202610A4F200CD8E38 /* ITaskWidgetSizeCalculator.swift */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		36A43AA42612621100B677A0 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				36A43A9C2612620100B677A0 /* TaskWidgetListAdapterDelegate.swift */,
+				36A43A97261261EE00B677A0 /* ITaskWidgetListAdapter.swift */,
+				3699B8A8260E9FC700CD8E38 /* TaskWidgetListAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		36A43AAB2612621F00B677A0 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				3699B90C26109E9C00CD8E38 /* ITask.swift */,
+				3699B91126109EAE00CD8E38 /* Task.swift */,
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,8 +404,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3699B8A4260E8E9300CD8E38 /* TaskWidgetListFlowLayout.swift in Sources */,
+				36A43A9D2612620100B677A0 /* TaskWidgetListAdapterDelegate.swift in Sources */,
 				3699B91C26109FEB00CD8E38 /* DashboardViewController.swift in Sources */,
 				3699B89F260E8E0400CD8E38 /* UIEdgeInsets+Extensions.swift in Sources */,
+				36A43AB5261269BE00B677A0 /* TaskWidgetViewCellDelegate.swift in Sources */,
+				36A43A98261261EE00B677A0 /* ITaskWidgetListAdapter.swift in Sources */,
+				36A43AB0261269A200B677A0 /* TaskWidgetViewCell.swift in Sources */,
 				3699B883260E76C600CD8E38 /* ProgressNode.swift in Sources */,
 				3699B81B260D381D00CD8E38 /* ViewController.swift in Sources */,
 				3699B8CB260F2DA200CD8E38 /* RandomAccessCollection+Extensions.swift in Sources */,

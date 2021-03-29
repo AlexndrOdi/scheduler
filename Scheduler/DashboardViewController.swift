@@ -58,122 +58,129 @@ final class DashboardViewController: UIViewController {
         return [
             Task(
                 title: NSAttributedString(
-                    string: "title title title title title title title title title title title title ",
-                    attributes: [.font: UIFont.systemFont(ofSize: 17),
+                    string: "Meeting",
+                    attributes: [.font: UIFont.boldSystemFont(ofSize: 20),
                                  .paragraphStyle: style]
                 ),
                 description: NSAttributedString(
-                    string: "description description description description description description description ",
+                    string: "Discuss team tasks for the day",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
                 ),
                 timeIntreval: NSAttributedString(
-                    string: "time --- to time",
+                    string: "11:00 AM",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
-                )
+                ),
+                isCompleted: false
             ),
             Task(
                 title: NSAttributedString(
-                    string: "title title title title title title title title title title title title ",
-                    attributes: [.font: UIFont.systemFont(ofSize: 17),
+                    string: "Tech meeting",
+                    attributes: [.font: UIFont.boldSystemFont(ofSize: 20),
                                  .paragraphStyle: style]
                 ),
                 description: NSAttributedString(
-                    string: "description description description description description description description ",
+                    string: "Discuss tech team tasks and problems for the day",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
                 ),
                 timeIntreval: NSAttributedString(
-                    string: "time --- to time",
+                    string: "11:30 AM",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
-                )
+                ),
+                isCompleted: false
             ),
             Task(
                 title: NSAttributedString(
-                    string: "title title title title title title title title title title title title ",
-                    attributes: [.font: UIFont.systemFont(ofSize: 17),
+                    string: "Diner",
+                    attributes: [.font: UIFont.boldSystemFont(ofSize: 20),
                                  .paragraphStyle: style]
                 ),
                 description: NSAttributedString(
-                    string: "description description description description description description description ",
+                    string: "Um-num-num",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
                 ),
                 timeIntreval: NSAttributedString(
-                    string: "time --- to time",
+                    string: "12:00 AM",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
-                )
+                ),
+                isCompleted: false
             ),
             Task(
                 title: NSAttributedString(
-                    string: "title title title title title title title title title title title title ",
-                    attributes: [.font: UIFont.systemFont(ofSize: 17),
+                    string: "Sleep",
+                    attributes: [.font: UIFont.boldSystemFont(ofSize: 20),
                                  .paragraphStyle: style]
                 ),
                 description: NSAttributedString(
-                    string: "description description description description description description description ",
+                    string: "ZZZzzzZZZzzzZZZzzz",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
                 ),
                 timeIntreval: NSAttributedString(
-                    string: "time --- to time",
+                    string: "14:00 PM",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
-                )
+                ),
+                isCompleted: false
             ),
             Task(
                 title: NSAttributedString(
-                    string: "title title title title title title title title title title title title ",
-                    attributes: [.font: UIFont.systemFont(ofSize: 17),
+                    string: "Meeting",
+                    attributes: [.font: UIFont.boldSystemFont(ofSize: 20),
                                  .paragraphStyle: style]
                 ),
                 description: NSAttributedString(
-                    string: "description description description description description description description ",
+                    string: "Discuss team tasks for the day again ...",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
                 ),
                 timeIntreval: NSAttributedString(
-                    string: "time --- to time",
+                    string: "15:00 PM",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
-                )
+                ),
+                isCompleted: false
             ),
             Task(
                 title: NSAttributedString(
-                    string: "title title title title title title title title title title title title ",
-                    attributes: [.font: UIFont.systemFont(ofSize: 17),
+                    string: "Meeting",
+                    attributes: [.font: UIFont.boldSystemFont(ofSize: 20),
                                  .paragraphStyle: style]
                 ),
                 description: NSAttributedString(
-                    string: "description description description description description description description ",
+                    string: "And again ...",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
                 ),
                 timeIntreval: NSAttributedString(
-                    string: "time --- to time",
+                    string: "16:00 PM",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
-                )
+                ),
+                isCompleted: false
             ),
             Task(
                 title: NSAttributedString(
-                    string: "title title title title title title title title title title title title ",
-                    attributes: [.font: UIFont.systemFont(ofSize: 17),
+                    string: "Go home",
+                    attributes: [.font: UIFont.boldSystemFont(ofSize: 20),
                                  .paragraphStyle: style]
                 ),
                 description: NSAttributedString(
-                    string: "description description description description description description description ",
+                    string: "...",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
                 ),
                 timeIntreval: NSAttributedString(
-                    string: "time --- to time",
+                    string: "17:00 PM",
                     attributes: [.font: UIFont.systemFont(ofSize: 17),
                                  .paragraphStyle: style]
-                )
+                ),
+                isCompleted: false
             )
         ]
     }

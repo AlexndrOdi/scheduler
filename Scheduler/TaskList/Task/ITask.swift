@@ -15,4 +15,5 @@ protocol ITask: AnyObject {
     var description: NSAttributedString? { get }
     var timeIntreval: NSAttributedString? { get }
     var isSelected: Bool { get set }
+    var isCompleted: Bool { get set }
 }

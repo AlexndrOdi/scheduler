@@ -14,6 +14,7 @@ protocol TaskWidgetListFlowLayoutDelegate: AnyObject {
     func flowLayout(
         _ flowLayout: TaskWidgetListFlowLayout,
         sizeForWidgetAt indexPath: IndexPath,
-        with textInsets: WidgetTextInsets
+        with textInsets: WidgetTextInsets,
+        prefferedWidth: CGFloat
     ) -> CGSize
 }
