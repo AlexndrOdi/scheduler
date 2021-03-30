@@ -5,7 +5,7 @@
 //  Created by Одинцов Александр Александрович on 29.03.2021.
 //
 
-import Foundation
+import UIKit
 
 protocol TaskWidgetListAdapterDelegate: AnyObject {
 

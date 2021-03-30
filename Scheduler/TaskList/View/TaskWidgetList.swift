@@ -15,6 +15,8 @@ final class TaskWidgetList: UIView {
 
     // MARK: - Properties
 
+    var scrollView: UIScrollView { collectionView }
+
     // MARK: - Private properties
 
     private let adapter: ITaskWidgetListAdapter

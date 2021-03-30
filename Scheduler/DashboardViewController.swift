@@ -13,6 +13,7 @@ final class DashboardViewController: UIViewController {
 
     // MARK: - Views
 
+    private let navigationBar = DashboardNavigationBar()
     private let tasksWidget = TaskWidgetList()
 
     // MARK: - Properties
@@ -37,14 +38,42 @@ final class DashboardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        navigationBar.attributedTitle = NSAttributedString(
+            string: "Today",
+            attributes: [
+                .font: UIFont.boldSystemFont(ofSize: 28),
+                .foregroundColor: #colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 1)
+            ]
+        )
+        navigationBar.attributedSubtitle = NSAttributedString(
+            string: "March 30, 2021",
+            attributes: [
+                .font: UIFont.systemFont(ofSize: 17),
+                .foregroundColor: #colorLiteral(red: 0.5704585314, green: 0.5704723597, blue: 0.5704649091, alpha: 1)
+            ]
+        )
+        view.addSubview(navigationBar)
         view.addSubview(tasksWidget)
+        navigationBar.scrollView = tasksWidget.scrollView
         viewModel.fetch()
         tasksWidget.reload(tasks: tasks)
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        tasksWidget.frame = view.bounds
+        navigationBar.frame = CGRect(
+            x: 20.0,
+            y: .zero,
+            width: view.bounds.width - 40.0,
+            height: 200
+        )
+        tasksWidget.frame = CGRect(
+            x: .zero,
+            y: navigationBar.frame.maxY,
+            width: view.bounds.width,
+            height: view.bounds.height - navigationBar.frame.maxY
+        )
     }
 
     // MARK: - Functions
